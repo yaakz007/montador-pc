@@ -5,6 +5,8 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Status](https://img.shields.io/badge/status-v1%20complete-brightgreen?style=flat)
 
+🔗 **Live demo:** https://yaakz007.github.io/montador-pc/
+
 A small web app where you pick a **processor** and a **motherboard** from two dropdown lists. The page checks whether the two parts are **compatible (same socket)** and shows the **total price**. Built with plain HTML, CSS and JavaScript (no frameworks) while learning JavaScript and DOM manipulation in my Software Engineering degree (FIAP).
 
 ## Why this repository exists
