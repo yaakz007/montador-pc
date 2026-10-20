@@ -112,12 +112,20 @@ for (const cpu of cpus) {
 function atualizarResumo() {
     const cpu = cpus[pc.selectedIndex]
     const placa = placas[placaSelect.selectedIndex]
-    if (!cpu || ! placa) {
+    if (!cpu || !placa) {
         resumo.textContent = "Selecione os componentes."
         return
     }
     const compativel = cpu.socket === placa.socket
     const total = cpu.preco + placa.preco
+
+    if (compativel) {
+        resumo.classList.add("compativel")
+        resumo.classList.remove("incompativel")
+    } else {
+        resumo.classList.add("incompativel")
+        resumo.classList.remove("compativel")
+    }
 
     resumo.textContent = `
     Status: ${compativel ? "Compatível" : "Incompatível"}
